@@ -7,5 +7,6 @@
 */
 int main(void)
 {
-printf(ls -l)
+printf(gcc 6-size.c ls -l);
+return (0);	
 }
