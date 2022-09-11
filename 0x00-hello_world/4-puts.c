@@ -1,2 +1,12 @@
-#!/bin/bash
-gcc int puts("Programming is like building a multilingual puzzle)
+#include <stdio.h>
+
+/*
+*
+*
+*Return: Alwas 0 (Success)
+*/
+int main(void)
+{
+puts("Programming is like building a multilingual puzzle\n")
+return (0);
+}
