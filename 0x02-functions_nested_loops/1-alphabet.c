@@ -1,15 +1,17 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- *main - Entry point 
+ *main - check the code 
  *
- *Return: 0 (Success)
+ *Return: Always 0
  */
 int main(void)
-{int x;
- for( x = 'A'; x <= 'Z'; x++)
+{
+	int x;
+
+ for (x = 'A'; x <= 'Z'; x++)
  {
-	         putchar(x);
+	 putchar(x);
 }
      return 0;
 
