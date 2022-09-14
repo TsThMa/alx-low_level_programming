@@ -1,24 +1,18 @@
 #include "main.h"
 
-
-
 /**
-
  * main - check the code
-
  *
-
  * Return: Always 0.
-
  */
-
 int main(void)
 {
 
-    for(int x = 'A'; x <= 'Z'; x++)
+for(int x = 'A'; x <= 'Z'; x++)
+int lower_x = tolower(x);
 
-        putchar(x);
+putchar(lower_x);
 
-    return 0;
+return 0;
 
 }
