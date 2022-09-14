@@ -1,20 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Entry point 
+ *main - Entry point 
  *
- * Return: 0 (Success)
+ *Return: 0 (Success)
  */
 int main(void)
 {
-	for(int x = 'A'; x <= 'Z'; x++)
+for (int x = 'A'; x <= 'Z'; x++)
+{
+int lower_x = tolower(x);
+putchar(lower_x);
+}
 
-	{
-
-		    int lower_x = tolower(x);
-
-		        putchar(lower_x);
-
-	}
 return (0);
+
 }
