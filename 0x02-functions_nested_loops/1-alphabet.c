@@ -7,25 +7,10 @@
  */
 int main(void)
 {
+ for(int x = 'A'; x <= 'Z'; x++)
 
-		char word[8] = "_putchar";
+	         putchar(x);
 
-			int i;
-
-
-
-				for (i = 0; i < 8; i++)
-
-						putchar(word[i]);
-
-					putchar('\n');
-
-						
-
-
-
-						return (0);
+     return 0;
 
 }
-
-
