@@ -1,8 +1,9 @@
-include <stdio.h>
+#include <stdio.h>
 
 
 int main(void)
 {
+
 
 char word[8] = "_putchar";
 
