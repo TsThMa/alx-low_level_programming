@@ -7,9 +7,25 @@
  */
 int main(void)
 {
-for (int x = 'A'; x <= 'Z'; x++)
-putchar(x);
 
-return (0);
+		char word[8] = "_putchar";
+
+			int i;
+
+
+
+				for (i = 0; i < 8; i++)
+
+						putchar(word[i]);
+
+					putchar('\n');
+
+						
+
+
+
+						return (0);
 
 }
+
+
