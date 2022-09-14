@@ -1,28 +1,21 @@
-#include <stdio.h>
-
+include <stdio.h>
 
 
 int main(void)
-
 {
 
-		char word[8] = "_putchar";
+char word[8] = "_putchar";
 
-			int i;
+int i;
 
+for (i = 0; i < 8; i++)
 
+putchar(word[i]);
 
-				for (i = 0; i < 8; i++)
-
-						putchar(word[i]);
-
-					putchar('\n');
-
-						
+putchar('\n');
 
 
-
-						return (0);
+return (0);
 
 }
 
