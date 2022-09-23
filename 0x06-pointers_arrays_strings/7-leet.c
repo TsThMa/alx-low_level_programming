@@ -10,19 +10,24 @@ char *leet(char *s)
 
 {
 	int i = 0, j;
-	char subs[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'},
+	char a[] = " \t\n,;.!?\"(){}";
 
-	str[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-
-	while (s[i])
+	while (*(s + i))
 	{
-		for (j = 0; j < 10; j++)
-			if (s[i] == str[j])
-				s[i] = subs[j];
-
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+		{
+			if (i == 0)
+				*(s + i) -= 'a' - 'A';
+			else
+			{
+				for (j = 0; j <= 12; j++)
+				{
+					if (a[j] == *(s + i - 1))
+						*(s + i) -= 'a' - 'A';
+				}
+			}
+		}
 		i++;
 	}
-
 	return (s);
-
 }
