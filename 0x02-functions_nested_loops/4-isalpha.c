@@ -5,6 +5,7 @@
  * @c: takes input from other functions.
  * Returns 1 if c is a letter, lowercase or uppercase
  * Returns 0 otherwise.
+ * Return: 1 or 0 in otherwise.
  */
 int _isalpha(int c)
 {
