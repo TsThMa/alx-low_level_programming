@@ -23,6 +23,7 @@ int _strlen(char *s)
 void _puts_recursion(char *s)
 {
 	int len = 0;
+
 	s  = "Puts with recursion";
 
 	if (len >= 2)
@@ -30,5 +31,4 @@ void _puts_recursion(char *s)
 		len++;
 		_puts_recursion(s);
 	}
-	return;
 }
