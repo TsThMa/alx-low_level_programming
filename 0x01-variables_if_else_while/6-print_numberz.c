@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 /**
  * main - Entry point
@@ -8,16 +7,15 @@
  */
 
 int main(void)
-
 {
 
-	int d = '0';
+	int i = '0';
 
-	while (d <= '9')
+	while (i <= '9')
 	{
-		d++;
-		putchar(d);
-		putchar('\n');
+		putchar(i);
+		++i;
 	}
+	putchar('\n');
 	return (0);
 }
