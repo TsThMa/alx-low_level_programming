@@ -1,25 +1,14 @@
-#include <stdio.h>
-
-#include <stdlib.h>
-
-
+#include <unistd.h>
+#include <sys/syscall.h>
 
 /**
-
- * main - Entry point
-
- * Return: Always 1 (Success)
-
+ * a C program that prints a string exactl, followed by '\n'
+ * Return: 1
  */
-
 int main(void)
-
 {
 
-	write(STDOUT_FILENO, "and that piece of art is useful
-
-			\" - Dora Korpar, 2015-10-19\n", 59);
-
-	return (1);
-
+const char msg[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+syscall(SYS_write, 1, msg, sizeof(msg)); 
+return (1);
 }
