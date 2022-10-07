@@ -2,44 +2,35 @@
 
 /**
  * main - Entry point
- * Description: print all possible different combinations of two digits.
+ * Description: print all possible different combinations of three digits.
+ * numbers shouldn't repeat
+ * each no. combination is seperated by a comma ',' followed by ' '.
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int digit1 = 0;
-	int digit2, digit3;
+	int i = 0;
+	int j = 1;
+	int c = 2;
 
-	while (digit1 <= 9)
+	while (i <= 8)
 	{
-		digit2 = 0;
-		while (digit2 <= 9)
-		{
-			digit3 = 0;
-			while (digit3 <= 9)
-			{
-			if (digit1 != digit2 &&
-					digit1 < digit2 &&
-					digit2 != digit3 &&
-					digit2 < digit3)
-			{
-						putchar(digit1 + 48);
-						putchar(digit2 + 48);
-						putchar(digit3 + 48);
-
-						if (digit1 + digit2 + digit3 != 24)
-						{
-							putchar(',');
-							putchar(' ');
-						}
-				}
-				++digit3;
-			}
-			++digit2;
-		}
-		++digit1;
+	while (j <= 9)
+	{
+	while (c <= 9)
+	{
+		if ((i < j) && (j < c))
+			putchar(i + 48);
+			putchar(j + 48);
+			putchar(c + 48);
+			putchar(',');
+			putchar(' ');
+			++c;
+	}
+	++j;
+	}
+	++i;
 	}
 	putchar('\n');
 	return (0);
 }
-				
