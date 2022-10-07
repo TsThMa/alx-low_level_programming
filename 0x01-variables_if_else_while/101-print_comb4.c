@@ -24,10 +24,13 @@ int main(void)
 			putchar(i + 48);
 			putchar(j + 48);
 			putchar(c + 48);
+		if (i + j + c <= 27)
+		{
 			putchar(',');
 			putchar(' ');
 		}
-		++c;
+	}
+	++c;
 	}
 	++j;
 	}
