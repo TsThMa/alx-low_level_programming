@@ -20,12 +20,14 @@ int main(void)
 	while (c <= 9)
 	{
 		if ((i < j) && (j < c))
+		{
 			putchar(i + 48);
 			putchar(j + 48);
 			putchar(c + 48);
 			putchar(',');
 			putchar(' ');
-			++c;
+		}
+		++c;
 	}
 	++j;
 	}
