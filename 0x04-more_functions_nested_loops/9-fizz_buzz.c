@@ -21,18 +21,24 @@ int main(void)
 	{
 		if (i % 15 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
+			printf(" ");
 		}
 		else if ((i % 3) == 0) /*for num div by 3*/
 		{
-			printf("Fizz ");
+			printf("Fizz");
+			printf(" ");
 		}
 		else if ((i % 5) == 0) /*for num div by 5*/
 		{
-			printf("Buzz ");
+			printf("Buzz");
+			printf(" ");
 		}
 		else
-			printf("%d ", i);
+		{
+			printf("%d", i);
+			printf(" ");
+		}
 	}
 	printf("\n");
 	return (0);
